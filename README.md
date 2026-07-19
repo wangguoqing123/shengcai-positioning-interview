@@ -94,11 +94,13 @@ shengcai-positioning-interview/
 │   └── openai.yaml
 └── references/
     ├── interview-guide.md
+    ├── profile-bio-guide.md
     └── output-templates.md
 ```
 
 - `SKILL.md`：访谈流程、阶段规则和自动写入逻辑。
 - `interview-guide.md`：分阶段问题、追问方法和信息充足标准。
+- `profile-bio-guide.md`：主页简介锚点、结构选择、禁用表达和验收标准。
 - `output-templates.md`：Obsidian 定位文件的固定结构。
 
 ## 当前版本
