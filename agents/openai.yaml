@@ -1,4 +1,4 @@
 interface:
   display_name: "航海定位官"
-  short_description: "8月生财航海家账号定位访谈专用 Skill，完成定位与账号包装"
-  default_prompt: "使用 $shengcai-positioning-interview 引导我完成8月生财航海家的账号定位访谈与账号包装。"
+  short_description: "帮助小红书AI创作者选内容偏向、确定视频形式，完成昵称头像与简介"
+  default_prompt: "使用 $shengcai-positioning-interview 帮我选择AI自媒体内容偏向和视频形式，再给我一套昵称、头像方向和简介。"

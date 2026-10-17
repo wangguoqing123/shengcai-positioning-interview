@@ -1,110 +1,68 @@
 # 航海定位官
 
-> 这是8月生财航海家-账号定位访谈专用 Skill。
+AI 自媒体轻量版，帮助船员选内容偏向、确定视频形式，完成小红书账号包装。
 
-`shengcai-positioning-interview` 面向第一次做 AI 自媒体的新手，通过一对一渐进访谈，帮助你完成个人定位、账号定位、内容定位和小红书账号包装。
+## 安装
 
-整个过程由 Skill 主动推进。你只需要根据问题提供真实信息、检查阶段结果并确认，不需要记忆或发送流程指令。
+仓库：[wangguoqing123/shengcai-positioning-interview](https://github.com/wangguoqing123/shengcai-positioning-interview)
 
-## 它能帮你完成什么
+### Codex
 
-1. 梳理真实的个人身份、经历、能力依据和内容视角。
-2. 明确 AI 自媒体账号的主题、表达方式、读者认知状态和核心价值。
-3. 确定长期内容主题、内容支柱、内容边界和前 5 条 AI 科普选题方向。
-4. 生成三套完整的小红书账号包装方案，包括头像、昵称、简介和背景图文字。
-5. 在你确认最终结果后，自动创建或更新 Obsidian 定位文件。
-
-## 使用前准备
-
-先在 Obsidian 中创建并打开以下 Vault：
+把下面整段复制到 Codex 对话框：
 
 ```text
-AI第二大脑_内容创作系统/
-├── 00_个人背景/
-├── 01_对标账号/
-├── 02_热点素材/
-├── 03_内容规律/
-├── 04_选题库/
-├── 05_内容草稿/
-└── 06_发布复盘/
-```
-
-再用 Codex 打开这个 Vault，确保 Codex 可以读取和修改其中的 Markdown 文件。
-
-## 安装方法
-
-把下面这段话发送给 Codex：
-
-```text
-请使用 skill-installer 安装这个 GitHub Skill：
+请使用 skill-installer 安装「航海定位官」：
 https://github.com/wangguoqing123/shengcai-positioning-interview
+
+Skill 位于仓库根目录，安装名称为 shengcai-positioning-interview。
+请保留 SKILL.md 和全部 references 文件，安装后检查文件是否齐全。
 ```
 
-安装完成后，“航海定位官”会说明接下来的四个阶段，并给出个人定位的第一个问题。
+安装完成后，在下一轮对话调用。如果没有识别到，重启 Codex 再试。依据：[OpenAI 官方安装说明](https://learn.chatgpt.com/docs/build-skills#install-curated-skills-for-local-use)。
 
-## 使用方法
+已经装过旧版时，让助手从此仓库更新这个 Skill，并保留原有账号资料。
 
-按照 Skill 的问题逐个回答即可：
+### WorkBuddy
+
+1. [下载 WorkBuddy 安装包](https://github.com/wangguoqing123/shengcai-positioning-interview/raw/refs/heads/main/dist/shengcai-positioning-interview-workbuddy.zip)。
+2. 在 WorkBuddy 左侧进入「专家·技能·连接器」→「技能」。
+3. 点击「添加技能」→「上传技能」，选择刚下载的 ZIP。
+4. 在「已安装」中确认技能已启用，再在对话中调用。
+
+依据：[WorkBuddy 官方技能安装说明](https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)。本仓库提供的自定义技能使用上传方式安装。
+
+## 使用方式
+
+已安装本地 Skill 后，在 AI 助手中发送：
 
 ```text
-个人定位访谈
-→ 确认个人定位
-→ 账号定位访谈
-→ 确认账号定位
-→ 内容定位访谈
-→ 确认内容定位
-→ 生成并确认账号包装
-→ 自动写入 Obsidian
+使用航海定位官，帮我选择本期 AI 自媒体的内容偏向和视频形式，再给我一套昵称、头像方向和简介。
 ```
 
-回答时请遵守三个原则：
-
-- 尽量提供真实经历、时间、动作、结果和踩坑过程。
-- 想不起来时直接说“暂时想不起来”，不要为了完成定位而编答案。
-- AI 总结后认真检查；不准确的地方直接说明真实情况。
-
-## 最终生成文件
-
-账号包装确认后，Skill 会自动创建或更新：
+如果已有方向，直接说明，例如：
 
 ```text
-00_个人背景/定位总览_v0.1.md
-00_个人背景/账号包装_v0.1.md
+使用航海定位官。我想分享 AI 视频玩法，不出镜，用录屏配讲解。昵称沿用“小林”，帮我完成账号包装。
 ```
 
-Skill 只会写入你已经确认的信息。无法确认的内容会标记为“待确认”，不会替你补全经历、能力或成绩。
+## 会得到什么
 
-## 本期内容方向
+- 一句话内容方向和视频形式。
+- 一套推荐昵称、头像方向、2—3 行简介。
+- 按需提供背景图文案。
 
-本期固定赛道为 AI 自媒体，包含四种内容形式：
+本期作业：一句话内容方向＋设置后的账号主页截图和链接。
 
-- AI 科普
-- AI 热点
-- AI 测评
-- AI 教程
+默认在对话里给结果，明确要求保存时再写文件。无需建立 Obsidian 目录。
 
-前 5 条内容优先从 AI 科普开始，用来训练资料查证、概念理解、大白话解释、举例和内容组织等基础能力。
+## 文件说明
 
-## Skill 文件结构
+- `SKILL.md`：轻量流程与范围。
+- `references/interview-guide.md`：用户不知道选什么方向时使用。
+- `references/profile-bio-guide.md`：昵称、头像和简介的生成原则。
+- `references/output-templates.md`：简短结果格式与按需保存规则。
+- `agents/openai.yaml`：名称、说明和调用提示。
 
-```text
-shengcai-positioning-interview/
-├── SKILL.md
-├── agents/
-│   └── openai.yaml
-└── references/
-    ├── interview-guide.md
-    ├── profile-bio-guide.md
-    └── output-templates.md
-```
+WorkBuddy 安装包由 `tools/build_workbuddy_package.py` 从主 Skill 和三个参考文件生成；仅补充 WorkBuddy 的展示与版本字段。修改源文件后，运行 `python3 tools/build_workbuddy_package.py` 重新打包。
 
-- `SKILL.md`：访谈流程、阶段规则和自动写入逻辑。
-- `interview-guide.md`：分阶段问题、追问方法和信息充足标准。
-- `profile-bio-guide.md`：主页简介锚点、结构选择、禁用表达和验收标准。
-- `output-templates.md`：Obsidian 定位文件的固定结构。
-
-## 当前版本
-
-- 版本：v0.1
-- 适用项目：8月生财航海家账号定位关卡
-- Skill 名称：航海定位官
+当前版本：v0.2，AI 自媒体轻量版。调用名保留 `shengcai-positioning-interview`。
