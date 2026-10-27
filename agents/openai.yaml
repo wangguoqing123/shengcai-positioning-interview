@@ -1,4 +1,4 @@
 interface:
   display_name: "航海定位官"
-  short_description: "帮助小红书AI创作者选内容偏向、确定视频形式，完成昵称头像与简介"
-  default_prompt: "使用 $shengcai-positioning-interview 帮我选择AI自媒体内容偏向和视频形式，再给我一套昵称、头像方向和简介。"
+  short_description: "结合真实对标、简介与模板逐步问答，确定AI内容方向、制作形式和账号包装"
+  default_prompt: "使用 $shengcai-positioning-interview，结合我的对标记录与内置案例，一次问一个问题，帮我确定内容方向、制作形式和有参考依据的昵称、头像方向与简介。"

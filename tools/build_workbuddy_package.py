@@ -10,11 +10,8 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 NAME = "shengcai-positioning-interview"
-FILES = (
-    "SKILL.md",
-    "references/interview-guide.md",
-    "references/profile-bio-guide.md",
-    "references/output-templates.md",
+FILES = ("SKILL.md",) + tuple(
+    str(path.relative_to(ROOT)) for path in sorted((ROOT / "references").rglob("*.md"))
 )
 
 
@@ -32,8 +29,8 @@ def build():
     extra = [
         'display_name: "航海定位官"',
         "description_zh: " + description.group(1),
-        'description_en: "Choose an AI content focus and prepare a Xiaohongshu profile."',
-        'version: "0.2.0"',
+        'description_en: "Use verified creator profiles and cases to choose an AI content focus through stepwise questions."',
+        'version: "0.3.0"',
         'author: "七天假"',
     ]
     payloads["SKILL.md"] = (
