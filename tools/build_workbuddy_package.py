@@ -30,7 +30,7 @@ def build():
         'display_name: "航海定位官"',
         "description_zh: " + description.group(1),
         'description_en: "Use verified creator profiles and cases to choose an AI content focus through stepwise questions."',
-        'version: "0.3.0"',
+        'version: "0.3.1"',
         'author: "七天假"',
     ]
     payloads["SKILL.md"] = (
