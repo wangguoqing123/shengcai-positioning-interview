@@ -27,7 +27,7 @@ def build():
     if not name or name.group(1) != NAME or not description:
         raise ValueError("Unexpected skill name or missing single-line description")
     extra = [
-        'display_name: "航海定位官"',
+        'display_name: "小红书 AI 博主定位与主页包装"',
         "description_zh: " + description.group(1),
         'description_en: "Use verified creator profiles and cases to choose an AI content focus through stepwise questions."',
         'version: "0.3.2"',
